@@ -128,7 +128,7 @@ static CGFloat const SVPullToRefreshViewHeight = 60;
 
 - (UILabel *)dateLabel {
     if(!dateLabel && pullToRefreshActionHandler) {
-        dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 28, 180, 20)];
+        dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 28, 200, 20)];
         dateLabel.font = [UIFont systemFontOfSize:12];
         dateLabel.backgroundColor = [UIColor clearColor];
         dateLabel.textColor = textColor;
@@ -162,7 +162,7 @@ static CGFloat const SVPullToRefreshViewHeight = 60;
     [_scrollView addSubview:self];
     self.showsPullToRefresh = YES;
     
-    self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, 150, 20)];
+    self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, 200, 20)];
     titleLabel.text = NSLocalizedString(@"Pull to refresh...",);
     titleLabel.font = [UIFont boldSystemFontOfSize:14];
     titleLabel.backgroundColor = [UIColor clearColor];
